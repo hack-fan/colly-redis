@@ -21,7 +21,7 @@ go get -u github.com/hack-fan/colly-redis
 ```go
 import (
 	"github.com/gocolly/colly"
-	"github.com/hack-fan/colly-redis"
+	"github.com/hack-fan/collyredis"
 	"github.com/go-redis/redis/v8"
 )
 
@@ -32,7 +32,7 @@ rdb := redis.NewClient(&redis.Options{
     DB:       0,  // use default DB
 })
 
-storage := colly-redis.NewStorage(rdb)
+storage := collyredis.NewStorage(rdb)
 
 c := colly.NewCollector()
 err := c.SetStorage(storage)

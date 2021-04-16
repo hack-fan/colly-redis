@@ -1,4 +1,4 @@
-package colly_redis
+package collyredis
 
 import (
 	"context"

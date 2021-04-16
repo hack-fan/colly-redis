@@ -1,4 +1,4 @@
-module github.com/hack-fan/colly-redis
+module github.com/hack-fan/collyredis
 
 go 1.16
 
